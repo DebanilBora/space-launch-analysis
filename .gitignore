@@ -1,0 +1,38 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Jupyter Notebook checkpoints (if you ever add notebooks)
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE settings
+.vscode/
+.idea/
+
+## Data files (keep CSVs local, not in repo)
+#*.csv
+
+# Plotly/Matplotlib temporary files
+*.png
+*.html
+*.json
+*.pdf
+
+# Build / packaging
+dist/
+build/
+*.egg-info/
