@@ -1,42 +1,116 @@
-Space Mission Data Analysis 🚀
-This project is a data analysis and visualization script built with Python. It explores a rich dataset of all space missions from the beginning of the Space Race in 1957 to the present. The script cleans the raw data and generates a series of interactive plots to turn data into actionable insights about space exploration trends.
+🚀 Space Mission Launches Analysis
 
-Analysis & Visualizations
-The script performs a series of analyses and creates visualizations to answer key questions, including:
+This project performs Exploratory Data Analysis (EDA) and Visualization of global space mission launches using Python, Pandas, and Plotly.
 
-Launch Frequency: A line chart showing the total number of space launches per year.
+It analyzes launch trends, mission costs, organizations’ contributions, and success rates over time, while providing rich interactive plots for better insights.
 
-Top Organizations: A line chart that tracks the launch activity of the top organizations over time, identifying historical and modern leaders.
+📊 Features & Analysis
 
-Mission Cost: A line chart that visualizes the average cost of a space mission over time.
+The script covers the following:
 
-Seasonal Trends: A bar chart illustrating the most popular months for space launches.
+Data Cleaning & Preprocessing
 
-Mission Success Rate: A line chart showing the mission success rate as a percentage over time, highlighting improvements in technology and safety.
+Cleans price data ($, , removal).
 
-Global Activity: A choropleth map (a world map) showing the total number of launches originating from each country.
+Parses mixed date formats.
 
-Technologies Used
-The following libraries were used in this project:
+Extracts year, month, and day from launch dates.
 
-Python: The core programming language.
+Classifies mission status (Success / Failure).
 
-Pandas: For efficient data loading, cleaning, and manipulation.
+Extracts country from launch location.
 
-Plotly: For creating interactive and publication-quality data visualizations.
+Exploratory Data Analysis (EDA)
 
-How to Run the Project
-Clone the Repository or Download Files:
-Make sure you have the Python script and the mission_launches.csv file in the same directory.
+📈 Total Launches Over Time
+Line chart of launches per year.
 
-Install Dependencies:
-You need to install the required libraries listed in the requirements.txt file. You can do this with a single command in your terminal.
+🏢 Top Organisations
+Top 10 organisations by launches over time.
 
-pip install -r requirements.txt
+💰 Mission Cost Trends
+Average mission cost per year.
 
-Run the Script:
-Execute the Python script from your terminal.
+📅 Popular Launch Months
+Bar chart of launches by month.
 
-python your_script_name.py
+✅ Mission Success Rate
+Annual mission success percentage.
 
-This will run the analysis, print key insights to the console, and open a series of interactive plots in your web browser.
+🌍 Launches by Country (Bonus)
+Choropleth world map showing number of launches by country.
+
+Key Insights
+
+Soviet Union dominated the 1970s & 1980s, while SpaceX dominates recent years.
+
+Mission success rate has significantly improved over decades.
+
+Average mission costs show a declining trend with fluctuations.
+
+Launch activity shows cyclical peaks across decades.
+
+🛠️ Tech Stack
+
+Python
+
+Pandas → Data cleaning & manipulation
+
+Plotly (Express & Graph Objects) → Interactive visualizations
+
+Warnings → Suppressed unnecessary warnings
+
+📂 Dataset
+
+The script expects a dataset file:
+
+mission_launches.csv
+
+
+Columns used:
+
+Date → Launch date
+
+Price → Mission cost
+
+Organisation → Launching organization
+
+Mission_Status → Mission outcome
+
+Location → Launch site
+
+⚠️ Ensure the file is placed in the same directory as the script.
+
+▶️ How to Run
+
+Clone this repo or download the script.
+
+Install dependencies:
+
+pip install pandas plotly
+
+
+Place mission_launches.csv in the project folder.
+
+Run the script:
+
+python space_mission_analysis.py
+
+
+Interactive charts will open in your browser.
+
+📸 Example Visualizations
+
+Launch Trends per Year
+
+Top Organisations by Launches
+
+Mission Costs Over Time
+
+Success Rate Over Time
+
+Launches by Country (World Map)
+
+🔖 Tags
+
+#DataAnalysis #Plotly #SpaceMissions #EDA #Visualization #Pandas
